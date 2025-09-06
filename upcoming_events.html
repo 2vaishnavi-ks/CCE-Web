@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ACCESS Events</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="upcoming_events.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="card-effects.css">
     <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="navbar.css">
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="navbar.js" defer></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg fixed-top">
@@ -24,10 +28,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html"><span class="nav-link-text">HOME</span></a>
+                        <a class="nav-link" href="index.html"><span class="nav-link-text" id="home-nav">HOME</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="faculty.html"><span class="nav-link-text" >FACULTY</span></a>
+                        <a class="nav-link" href="faculty.html"><span class="nav-link-text" id="faculty-nav">FACULTY</span></a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="committee_members.html"><span class="nav-link-text">COMMITTEE MEMBERS</span></a>
@@ -53,6 +57,35 @@
     <div class="hero-section">
         <div class="hero-overlay">
             <h1 class="animated-title">ACCESS Events</h1>
+            <style>
+                .navbar {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 70px;
+                    z-index: 1000;
+                    padding: 0.5rem 1rem;
+                    background-color: rgba(25, 25, 35, 0.95) !important;
+                    backdrop-filter: blur(10px);
+                    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+                    transition: all 0.3s ease;
+                }
+                body {
+                    padding-top: 70px;
+                }
+                .navbar-toggler {
+                    display: none;
+                }
+                @media (max-width: 991px) {
+                    .navbar-toggler {
+                        display: block;
+                        border: none;
+                        background: rgba(255, 98, 0, 0.1);
+                        color: #ff6200;
+                    }
+                }
+            </style>
             <p class="hero-subtitle">Discover Amazing Events Organised by ACCESS</p>
         </div>
         <div class="bubbles">
@@ -429,6 +462,9 @@
     </div>
 
     <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="events.js"></script>
 </body>
 </html>

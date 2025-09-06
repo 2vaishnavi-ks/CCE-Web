@@ -19,7 +19,10 @@ body {
 header {
     text-align: center;
     padding: 30px 20px;
-    margin: 10vh;
+    margin: 10vh auto;
+    max-width: 1200px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 header h1 span, header h2 span {
@@ -35,6 +38,8 @@ header h1 span, header h2 span {
     color:#ff5e00;
     box-shadow: 0 0 20px #5a3c37ec;
     border-radius: 20px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 
