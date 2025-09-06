@@ -38,7 +38,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const navbarCollapse = document.querySelector('.navbar-collapse');
     
     if (navbarToggler && navbarCollapse) {
-        navbarToggler.addEventListener('click', function() {
+        navbarToggler.addEventListener('click', function(e) {
+            e.preventDefault();
             navbarCollapse.classList.toggle('show');
         });
     }
