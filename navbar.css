@@ -97,13 +97,6 @@
       padding: 1rem;
       z-index: 1000;
       border-top: 1px solid #eeeeee;
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.3s ease-out;
-  }
-
-  .navbar-collapse.show {
-      max-height: 500px;
   }
 
   .navbar-nav {
